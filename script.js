@@ -51,7 +51,7 @@ let productosTienda = [
         categoria: "bicicletas",
         precio: 530900,
         stock: 10,
-        img: "./imgs/BiciNiño.JPG"
+        img: "./imgs/BiciNiño.jpeg"
     },
     {
         nombre: "guantes ciclismo",
