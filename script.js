@@ -51,7 +51,7 @@ let productosTienda = [
         categoria: "bicicletas",
         precio: 530900,
         stock: 10,
-        img: "./imgs/BiciNiño.webp"
+        img: "./imgs/BiciNiño.JPG"
     },
     {
         nombre: "guantes ciclismo",
@@ -142,7 +142,6 @@ function agregarProdAlCarrito(e) {
             let pos = carrito.findIndex(producto => producto.id == prodBuscado.id)
             carrito[pos].unidades++
             carrito[pos].subtotal = carrito[pos].precio * carrito[pos].unidades
-            let totalCarrito = carrito.reduce((acum, carrito) => acum + carrito.subtotal, 0)
             
         } else {
             carrito.push({
@@ -158,8 +157,8 @@ function agregarProdAlCarrito(e) {
     } else {
         alert(`Producto ${prodBuscado.nombre} sin stock`)
     }
-    console.log(totalCarrito)
 }
+console.log(totalCarrito)
 
 function renderCarrito(arrayDeProductos) {
     carritoDOM.innerHTML = ""
