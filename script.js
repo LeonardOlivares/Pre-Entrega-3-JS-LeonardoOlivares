@@ -158,7 +158,7 @@ function agregarProdAlCarrito(e) {
         alert(`Producto ${prodBuscado.nombre} sin stock`)
     }
 }
-console.log(totalCarrito)
+
 
 function renderCarrito(arrayDeProductos) {
     carritoDOM.innerHTML = ""
